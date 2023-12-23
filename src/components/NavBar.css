@@ -1,0 +1,48 @@
+a {
+    text-decoration: none;
+    color: white;
+    padding:20px;
+    
+}
+
+.NavBarMain {
+    align-items: center;
+    display: flex;
+    background-color: #282c34;
+    padding:10px;
+    justify-content: space-between;
+    color: white
+}
+.NavBarButton {
+    font-size:20px;
+    font-weight:bold;
+    background: linear-gradient(90deg,rgb(172, 172, 247), rgb(255, 145, 255));
+    padding:5px;
+    margin-left: 30px;
+    border-radius: 20px;
+    border-color:#282c34;
+    animation: glow 1s ease-in-out infinite alternate;
+    transition: all 0.3s ease-in-out;
+    
+}
+.NavBarButton:hover{
+    animation: glow2 1s ease-in-out infinite alternate;
+    
+}
+
+@keyframes glow2{
+    from {
+        box-shadow: 0 0 1px rgb(123, 123, 231), 0 0 3px rgb(123, 123, 231), 0 0 4px rgb(123, 123, 231), 0 0 5px rgb(123, 123, 231), 0 0 6px rgb(123, 123, 231), 0 0 7px rgb(123, 123, 231), 0 0 8px rgb(123, 123, 231);
+    }
+    to {
+        box-shadow: 0 0 1px #ffffff, 0 0 3px #ffffff, 0 0 4px #fff, 0 0 5px #fff, 0 0 6px #fff, 0 0 7px #fff, 0 0 8px #fff;
+    }
+}
+@keyframes glow{
+    from {
+        box-shadow: 0 0 1px #6a6a6a, 0 0 3px #595959, 0 0 4px #757575, 0 0 5px #343434, 0 0 6px #2c2c2c, 0 0 7px #2f2f2f, 0 0 8px #000000;
+    }
+    to{
+        box-shadow: 0 0 1px #ffffff, 0 0 3px #ffffff, 0 0 4px #fff, 0 0 5px #fff, 0 0 6px #fff, 0 0 7px #fff, 0 0 8px #fff;
+    }
+}
