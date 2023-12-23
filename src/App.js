@@ -1,8 +1,9 @@
 import React from 'react';
 import '../src/styles/App.css';
 import '../src/pages/Home.js';
-import HomePage from '../src/pages/Home.js';
-import AboutPage from '../src/pages/About.js';
+import Home from '../src/pages/Home.js';
+import About from '../src/pages/About.js';
+import Register from '../src/pages/Register.js';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -10,8 +11,9 @@ function App() {
 		<div className='App'>
 			<BrowserRouter className='App'>
 				<Routes>
-					<Route path="/" element={<HomePage />} />
-					<Route path="/about" element={<AboutPage />} />
+					<Route path="/" element={<Home />} />
+					<Route path="/about" element={<About />} />
+					<Route path="/register" element={<Register />} />
 				</Routes>
 			</BrowserRouter>
 
